@@ -6,7 +6,7 @@ class Solution:
             if prime[i]==True:
                 for j in range(i*i,n+1,i):
                     prime[j]=False
-        for p in range(2,n//2+1):
-            if prime[p] and prime[n-p]:
-                res.append([p,n-p])
+        for k in range(2,n//2+1):
+            if prime[k] and prime[n-k]:
+                res.append([k,n-k])
         return res    
