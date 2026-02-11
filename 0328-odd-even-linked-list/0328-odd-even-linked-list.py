@@ -11,7 +11,6 @@ class Solution:
         evenhead=head.next
         op=oddhead
         ep=evenhead
-        
         while ep and ep.next:
             op.next=op.next.next
             op=op.next
