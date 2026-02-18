@@ -10,7 +10,7 @@ class Solution:
         curr=root
         if root is None:
             return None
-        while curr:
+        while curr!=None:
             if curr.val>p.val and curr.val>q.val:
                 curr=curr.left
             elif curr.val<p.val and curr.val<q.val:
