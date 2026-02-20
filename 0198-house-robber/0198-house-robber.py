@@ -1,5 +1,6 @@
 class Solution:
     def rob(self, nums: List[int]) -> int:
+        #memoization
         '''dp=[-1]*len(nums)
         return self.rec(0,nums,dp)
     def rec(self,i,nums,dp):
@@ -11,7 +12,7 @@ class Solution:
         not_take=self.rec(i+1,nums,dp)
         dp[i]=max(take,not_take)
         return dp[i]''' 
-
+        #tabulation
         if len(nums)==1:
             return nums[0]
         dp=[0]*len(nums)
